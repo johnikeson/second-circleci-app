@@ -9,7 +9,7 @@ describe('product', () => {
 
             it("should return 404", async () => {
                 expect(true).toBe(true);
-                const id = '3'
+                const id = '33'
 
                 await supertest(app).get(`/products/${id}`).expect(404);
             })
